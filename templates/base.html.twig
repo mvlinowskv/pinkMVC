@@ -1,5 +1,4 @@
-{% trans_default_domain 'app' %}
-{% include 'header.html.twig' with {block_name: 'header'} only %}
+{#{% trans_default_domain 'app' %}#}
 
 <!DOCTYPE html>
 <html lang="pl">
@@ -23,6 +22,7 @@
     {% endblock %}
 </head>
 <body>
+{% include 'header.html.twig' with {block_name: 'header'} only %}
 {% block header %}{% endblock %}
 <main id="main" class="main">
     {% block body %}{% endblock %}
