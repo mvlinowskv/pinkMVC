@@ -5,6 +5,10 @@ $grey: #cfcfcf;
   font-family: 'Poppins', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -15,6 +19,11 @@ body {
   //background-repeat: no-repeat;
   //background-position: bottom;
   //background-attachment: fixed;
+
+  @media (min-width: 1921px) {
+    max-width: 1920px;
+    margin: auto;
+  }
 }
 
 
@@ -35,6 +44,13 @@ body {
   color: #2e2e2e;
 }
 
+.h3 {
+  font-size: clamp(1rem, 1.75vw, 3rem);
+  margin-bottom: 2rem;
+  color: #ffffff;
+  margin-top: 0;
+}
+
 .p {
   font-size: 0.85rem;
   font-weight: 400;
@@ -42,5 +58,22 @@ body {
 
   @media (min-width: 991px) {
     width: 55%;
+  }
+}
+
+#main {
+  margin-top: 7rem;
+}
+
+.btn-menu {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  @media (min-width: 1199px) {
+    display: none;
   }
 }

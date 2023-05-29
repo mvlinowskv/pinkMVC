@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 {% block body %}
-    <header class="header">
+    <header class="header" id="home">
         <div class="header__el header__el--left">
             <h1 class="h1">
                 Sprawdź, co mamy do zaoferowania!
@@ -13,12 +13,12 @@
             </p>
         </div>
         <div class="header__el header__el--box">
-            <img class="header__img" src="{{ asset('build/images/pexels-j-kelly-brito-322338.jpg') }}">
+            <img class="header__img" src="{{ asset('/images/pexels-j-kelly-brito-322338.jpg') }}" alt="computer">
 
         </div>
     </header>
 
-    <section class="cards">
+    <section class="cards" id="clients">
         <h2 class="h2">
             Klienci, którzy Nam zaufali
         </h2>
@@ -73,4 +73,30 @@
         </div>
 
     </section>
+
+    <section class="section-build" id="dreams">
+        <div class="section-build__box section-build__box--text">
+            <h3 class="h3">
+                Zbuduj z Nami swój wymarzony team i spełniaj swoje marzenia!
+            </h3>
+            <p class="p">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged.
+            </p>
+            <p class="p">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged.
+            </p>
+        </div>
+        <div class="section-build__box section-build__box--img">
+            <img class="section-build__box__img" src="{{ asset('/images/76459.png') }}" alt="computer">
+        </div>
+    </section>
+    <footer class="footer">
+        Copyright by Klaudia Malinowska
+    </footer>
 {% endblock %}
