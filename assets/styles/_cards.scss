@@ -5,7 +5,11 @@
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='600' preserveAspectRatio='none' viewBox='0 0 1920 600'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1038%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c14 C 64%2c56.2 192%2c217.6 320%2c225 C 448%2c232.4 512%2c37 640%2c51 C 768%2c65 832%2c283.8 960%2c295 C 1088%2c306.2 1152%2c118.2 1280%2c107 C 1408%2c95.8 1472%2c260.4 1600%2c239 C 1728%2c217.6 1856%2c47.8 1920%2c0L1920 600L0 600z' fill='rgba(96%2c 70%2c 215%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c446 C 55%2c463.4 165%2c545.6 275%2c533 C 385%2c520.4 440%2c391.4 550%2c383 C 660%2c374.6 715%2c506.2 825%2c491 C 935%2c475.8 990%2c295 1100%2c307 C 1210%2c319 1265%2c539.6 1375%2c551 C 1485%2c562.4 1541%2c370.2 1650%2c364 C 1759%2c357.8 1866%2c488.8 1920%2c520L1920 600L0 600z' fill='rgba(221%2c 124%2c 209%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1038'%3e%3crect width='1920' height='600' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
   background-position: bottom;
   background-repeat: no-repeat;
-  min-height: 75vh;
+  min-height: 70vh;
+  @media (min-width: 991px) {
+    min-height: 51vh;
+  }
+
 }
 
 .container-cards {
